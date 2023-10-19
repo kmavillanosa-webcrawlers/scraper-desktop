@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace scraper.domain
 {
-    public class Project
+    public class Project : EntityBase
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public string Url { get; set; }
+        public List<string> OutputColumns { get; set; }
     }
 }
